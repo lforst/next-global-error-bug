@@ -1,2 +1,10 @@
-# next-global-error-bug
-https://github.com/vercel/next.js/issues/53756
+Repro:
+
+```
+yarn
+yarn build
+yarn start
+Navigate to http://localhost:3000/some-route/some-route
+
+global-error.tsx should be rendered but isnt.
+```
